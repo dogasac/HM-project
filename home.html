@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+
+<style>
+
+.btn-outline-dark.rounded-pill {
+  border-color: black; 
+  color: black; 
+
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black; 
+}
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) grayscale(100%) contrast(100%);
+}
+.navbar-nav .nav-item {
+  margin-right: 15px; /* Sağ taraf için boşluk ekler */
+}
+
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-auto" href="#">
+            <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/2560px-H%26M-Logo.svg.png" style="height: 60px;">
+          </a>
+        </div>
+      </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a>Kadın</a>
+                </li>
+                <li class="nav-item">
+                    <a>Erkek</a>
+                </li>
+                <li class="nav-item">
+                    <a>Divided</a>
+                </li>
+                <li class="nav-item">
+                    <a>Bebek</a>
+                </li>
+                <li class="nav-item">
+                    <a>Çocuk</a>
+                </li>
+                <li class="nav-item">
+                    <a>H&M HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a>Spor</a>
+                </li>
+                <li class="nav-item">
+                    <a>İndirim</a>
+                </li>
+              
+            </ul>
+           
+            <form class="form-inline my-2 my-lg-0" action="/search" method ="get">
+                <input class="form-control mr-sm-2" type="search" placeholder="Arama" aria-label="Search"  name="query">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ara</button>
+            </form>
+        </div>
+      
+</nav>
+
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-start">
+      <button type="button" class="btn rounded-pill mx-1" style="background-color: red;
+      color: aliceblue;">Kadın</button>
+      <button type="button" class="btn btn-outline-dark rounded-pill mx-1">Erkek</button>
+      <button type="button" class="btn btn-outline-dark rounded-pill mx-1">Divided</button>
+      <button type="button" class="btn btn-outline-dark rounded-pill mx-1">Bebek</button>
+      <button type="button" class="btn btn-outline-dark rounded-pill mx-1">Çocuk</button>
+      <button type="button" class="btn btn-outline-dark rounded-pill mx-1">H&M HOME</button>
+      <button type="button" class="btn btn-outline-dark rounded-pill mx-1">Spor</button>
+    </div>
+  </div>
+  
+
+<div class="container mt-4"></div>
+<div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="card-deck">
+           
+            <div class="card">
+              <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=source[/c0/f1/c0f140323198b82f8676267a477e32fb24dd8ece.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]" alt="Ürün 1">
+              <div class="card-body">
+                <p class="card-text">Poplin Dress</p>
+                <p class="card-text"><small class="text-muted">929,99TL</small></p>
+              </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=source[/82/48/8248e6b46f2f597de91ad0b47e77119ed67e41fa.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]" alt="Ürün 1">
+                <div class="card-body">
+                  
+                  <p class="card-text">Keten Gömlek</p>
+                  <p class="card-text"><small class="text-muted">1129,00TL</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=source[/a2/ca/a2ca370b54718ae3ce8b469d9c7a6017aa76aecb.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[2]&call=url[file:/product/main]" alt="Ürün 1">
+                <div class="card-body">
+                  <p class="card-text">Keten Karışımlı Elbise</p>
+                  <p class="card-text"><small class="text-muted">1579,00TL</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=source[/ad/66/ad6628ff1d7f4467703a260943bc5e75d01166f1.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]" alt="Ürün 1">
+                <div class="card-body">
+                  <p class="card-text">Keten Karışımlı Midi Elbise</p>
+                  <p class="card-text"><small class="text-muted">929,00TL</small></p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="card-deck">
+        
+            <div class="card">
+                <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=source[/09/cb/09cb671bec847d7cb24b0927bc5af94460e266b9.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]" alt="Ürün 1">
+                <div class="card-body">
+                  <p class="card-text">Kabarık Kollu Üst</p>
+                  <p class="card-text"><small class="text-muted">399,99TL</small></p>
+                </div>
+              </div>
+              <div class="card">
+                  <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=source[/1b/9c/1b9c652860ccdacc7273df2c624b4a1850f14c7c.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]" alt="Ürün 1">
+                  <div class="card-body">
+                    
+                    <p class="card-text">Önü Düğmeli Body</p>
+                    <p class="card-text"><small class="text-muted">459,99TL</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=source[/26/df/26dfc677d4cea643bc21e3f717f2a2d19f448a67.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]" alt="Ürün 1">
+                  <div class="card-body">
+                    <p class="card-text">Desenli Şal</p>
+                    <p class="card-text"><small class="text-muted">329,99TL</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=source[/01/9a/019afe6e748ca50f7d6921b477ab8ac56b38da39.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]" alt="Ürün 1">
+                  <div class="card-body">
+                    <p class="card-text">Diz Boyu Etek</p>
+                    <p class="card-text"><small class="text-muted">459,99TL</small></p>
+                  </div>
+                </div>
+           
+          </div>
+        </div>
+      </div>
+    
+      <div class="carousel-item">
+        <div class="container">
+          <div class="card-deck">
+          
+            <div class="card">
+                <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F8a%2Fb7%2F8ab7cd0ac6d55ebc5109be0432e50793f008bd03.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="Ürün 1">
+                <div class="card-body">
+                  <p class="card-text">Lastik Örgülü Kolsuz Üst</p>
+                  <p class="card-text"><small class="text-muted">339,99TL</small></p>
+                </div>
+              </div>
+              <div class="card">
+                  <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F74%2F8f%2F748f12a660cbcada2ab28acc3b2d9d56ebd04016.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="Ürün 1">
+                  <div class="card-body">
+                    
+                    <p class="card-text">Oversize Tişört</p>
+                    <p class="card-text"><small class="text-muted">459,99TL</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa6%2Fea%2Fa6ea404d16457516a9457a66018e8b0a12df8c96.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="Ürün 1">
+                  <div class="card-body">
+                    <p class="card-text">Keten Karışımlı Pantolon</p>
+                    <p class="card-text"><small class="text-muted">459,99TL</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd1%2F51%2Fd15181d886e3e8d2b32c5c83cb7390fc64f244e4.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="Ürün 1">
+                  <div class="card-body">
+                    <p class="card-text">Keten Karışımlı Oversize Gömlek</p>
+                    <p class="card-text"><small class="text-muted">769,99TL</small></p>
+                  </div>
+                </div>
+           
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="card-deck">
+           
+            <div class="card">
+                <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=source[/4d/ff/4dff11bebb59494fc2e497ad33552455a1214d00.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]" alt="Ürün 1">
+                <div class="card-body">
+                  <p class="card-text">Sırtı Çapraz Kolsuz Üst</p>
+                  <p class="card-text"><small class="text-muted">459,99TL</small></p>
+                </div>
+              </div>
+              <div class="card">
+                  <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=source[/52/2b/522beccf98cff7b1b8986005acc2ce0db4f4ae03.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]" alt="Ürün 1">
+                  <div class="card-body">
+                    
+                    <p class="card-text">Ribanalı Bedene Oturan Elbise</p>
+                    <p class="card-text"><small class="text-muted">359,99TL</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=source[/55/85/5585ae0c440f4ca5d20587d5fe3da27a3a7ac0ba.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]" alt="Ürün 1">
+                  <div class="card-body">
+                    <p class="card-text">Keten Karışımlı Şort</p>
+                    <p class="card-text"><small class="text-muted">579,99TL</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://lp2.hm.com/hmgoepprod?set=source[/7d/11/7d112ca00be60c73481d5ab944b36804ab17537e.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]" alt="Ürün 1">
+                  <div class="card-body">
+                    <p class="card-text">Eskitilmiş ve Omuzları Vatkalı Ceket</p>
+                    <p class="card-text"><small class="text-muted">1579,TL</small></p>
+                  </div>
+                </div>
+           
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  
+    <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.11/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

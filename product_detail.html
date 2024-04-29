@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Detay Sayfası</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+
+    .price-section {
+        margin-top: 30px; 
+        margin-bottom: 30px; 
+    }
+    .size-option {
+        margin-top: 50px; 
+        font-weight: 700;
+       
+    }
+</style>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+        
+            <div class="row"> 
+                <div class="col-md-6"> 
+                    <div class="row">
+                         <div class = "col-md"> 
+                            <img src="{{ product.img_url }}" class="card-img-top" alt="{{ product.name }}"> 
+                        </div> 
+                        <div class = "col-md">
+                                 <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb1%2F50%2Fb15048579efe34e99a4eae3a691327dfc5e941ff.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVEDETAIL%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/fullscreen]" class="card-img-top" alt="{{ product.name }}"> </div> 
+                                </div>
+                             </div> 
+                      
+            <!-- Ürün Bilgileri -->
+            <div class="col-md-6">
+                <h2 style = "font-family:'Times New Roman', Times, serif">{{product.description}}</h2>
+              
+                <h3 class="price-section">{{product.price}} TL</h3>
+                
+                <h5>Siyah</h5>
+                <div class="row">
+                    <div class="col-2">
+                        <div class="card">
+                            <img src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Ff3%2F71%2Ff3716ced68e4133b97a555c48625001e5386001b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D" >
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <img src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fc8%2Fec%2Fc8ec4de83c2f44e5f6d1128e17bf44d2d63854f0.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D" >
+                           
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Beden Seçenekleri -->
+                <p class = "size-option">Bedenler</p>
+                <div class="size-selector ">
+                    <button type="button" class="btn btn-outline-secondary ">XS</button>
+                    <button type="button" class="btn btn-outline-secondary ">S</button>
+                    <button type="button" class="btn btn-outline-secondary">M</button>
+                    <button type="button" class="btn btn-outline-secondary">L</button>
+                    <button type="button" class="btn btn-outline-secondary">XL</button>
+                </div>
+                <!-- Favorilere Ekle -->
+                
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

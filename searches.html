@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arama Sonuçları</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="product-header" style="margin-left: 200px;"> "{{ query }}" İÇİN SONUÇLAR</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-4" style="margin-left: -210px;">
+            <div class="col-auto ">
+                <select class="custom-select custom-select-sm" onchange="location.href = this.value;"> 
+                    
+                    <option value="{{ url_for('search', query=query, sort='price_asc') }}" {% if sort_by == 'price_asc' %}selected{% endif %}>Fiyata Göre Artan</option> 
+                    <option value="{{ url_for('search', query=query, sort='price_desc') }}" {% if sort_by == 'price_desc' %}selected{% endif %}>Fiyata Göre Azalan</option> 
+                </select>
+            </div>
+            <div class="col-auto">
+                <select class="custom-select custom-select-sm">
+                           <option>Beden</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                       
+                    </div>
+                </select>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <ul class="list-group list-group-flush">
+                    {% for category in categories %} 
+                        <li class = list-group-item>{{ category.name }} ({{ category.count }})</li>
+                    {% endfor %} 
+                </ul>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            {% if product.id == 1 %}
+                                <a href="/product/{{ product.id }}" class="card h-100">
+                            {% else %}
+                                <div class="card h-100">
+                            {% endif %}
+                                <img src="{{ product.img_url }}" class="card-img-top" alt="{{ product.name }}">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title" style="color: black">{{ product.description }}</h5>
+                                    <p class="card-text" style="color: black">{{ product.price }} TL</p>
+                                </div>
+                            {% if product.id == 1 %}
+                                </a>
+                            {% else %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
